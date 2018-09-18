@@ -36,6 +36,16 @@ if errorlevel 1 goto error
 fc output.txt  test/equilateral_triangle.txt
 if errorlevel 1 goto error
 
+%PROGRAM% 3.1 3.1 3.1  > output.txt
+if errorlevel 1 goto error
+fc output.txt  test/equilateral_triangle.txt
+if errorlevel 1 goto error
+
+%PROGRAM% 3,1 3,1 3,1  > output.txt
+if errorlevel 1 goto error
+fc output.txt  test/equilateral_triangle.txt
+if errorlevel 1 goto error
+
 %PROGRAM% 10 15 15  > output.txt
 if errorlevel 1 goto error
 fc output.txt  test/isosceles_triangle.txt
