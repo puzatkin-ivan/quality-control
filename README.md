@@ -14,5 +14,5 @@ php >= 5.6
 ```
 Команда запуска:
 ```
-php index.php 'http://links.testingcourse.ru/'
+php index.php "http://links.testingcourse.ru/"
 ```
